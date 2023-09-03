@@ -1,0 +1,56 @@
+/* ReservationComponent.css */
+
+/* Add general styles here */
+
+/* Responsive styles for small screens */
+@media screen and (max-width: 1000px) {
+    /* Wrap the table in a scrollable container */
+    .bookings-container {
+      overflow-x: auto;
+    }
+  
+    /* Hide the table header on small screens to save space */
+    .table thead {
+      display: none;
+    }
+  
+    /* Display each row as a block to make it stack vertically on small screens */
+    .table tbody tr {
+      display: block;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 8px;
+    }
+  
+    /* Show the table data as a block to align the content to the left */
+    .table tbody td {
+      display: block;
+      text-align: left; /* Align content to the left */
+    }
+  
+    /* Add some spacing between each column */
+    .table tbody td:before {
+      content: attr(data-label);
+      font-weight: bold;
+      margin-bottom: 0.5rem; /* Add a small margin between label and data */
+    }
+  
+    /* Make both buttons the same size */
+    .small-btn {
+      width: 100%;
+    }
+  }
+  
+
+  @media screen and (max-width: 1200px) {
+    /* Wrap the table in a scrollable container */
+    .small-btn {
+        width: -webkit-fill-available;
+        margin-top: 3px;
+    }
+    /* .table tbody tr {
+        text-align: bottom; /* Align content to the left */
+
+      /* } */ 
+}

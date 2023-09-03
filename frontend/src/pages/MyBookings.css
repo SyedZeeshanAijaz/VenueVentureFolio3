@@ -1,0 +1,142 @@
+.add-booking-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #042d66;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #042d66; /* Add a 2px solid border */
+
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+  
+  .bookings-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .featured-label {
+    font-weight: bold;
+    color: #ff5722;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    margin-bottom: 10px;
+  }
+  
+  .cancel-booking-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #042d66;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.mt-5 {
+  margin-top: -1rem!important;
+}
+  
+  .cancel-booking-btn:hover {
+    background-color: #f30d0d;
+  }
+
+  /* MyBookings.css */
+.small-btn {
+  display: inline-block;
+  background-color: #042d66;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.green-btn:hover {
+  background-color: rgb(2, 140, 2);
+}
+
+.blue-btn:hover {
+  background-color: rgb(0, 75, 154);
+}
+
+.red-btn:hover {
+  background-color: rgb(255, 3, 3);
+}
+
+  
+.heading-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bookings-title {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem!important;
+}
+
+.cancel-booking-btn {
+  /* Step 8: Align the button to the right */
+  margin-left: auto;
+}
+
+/* Optional: If you want to align the button at the right on small screens */
+@media (max-width: 768px) {
+  .heading-container {
+    flex-direction: column;
+  }
+  .bookings-title {
+    text-align: center;
+    font-size: 1.8rem;
+
+  }
+  .cancel-booking-btn {
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    /* Optional: You can also set width to make the button full-width on small screens */
+    /* width: 100%; */
+  }
+}
+
+/* /* Styles for small screens */
+@media (max-width: 768px) {
+  .booking-cards-container {
+    flex-direction: column;
+    align-items: left;
+  }
+
+  .booking-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+

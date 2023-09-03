@@ -1,0 +1,42 @@
+/* Common styles for both small and large screens */
+
+/* ... (existing CSS styles) ... */
+
+/* Media Query for small screens (up to 767px width) */
+@media screen and (max-width: 767px) {
+    .MuiGrid-item {
+      /* Adjust grid items width for small screens */
+      width: 100%;
+    }
+  
+    /* Additional styles for StatBoxCard */
+    .StatBoxCard {
+      margin-bottom: 20px;
+    }
+  
+    /* Additional styles for BarChart and PieChart */
+    .ChartContainer {
+      /* Adjust the spacing between the charts for small screens */
+      margin-top: 20px;
+    }
+  
+    .ChartContainer .MuiBox-root {
+      /* Adjust the width of the chart containers for small screens */
+      width: 100%;
+    }
+  
+    /* Add new styles to display the charts in a row for screens below 420px */
+    @media screen and (max-width: 419px) {
+      .ChartContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+  
+      .ChartContainer .MuiBox-root {
+        /* Adjust the width of the chart containers for small screens */
+        width: 50%;
+      }
+    }
+  }
+  

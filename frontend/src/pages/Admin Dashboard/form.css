@@ -1,0 +1,86 @@
+/* styles.css (or any other CSS file) */
+
+/* Center the form within the container */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style for form labels */
+.form-group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+/* Style for form inputs */
+.form-control {
+  width: 100%; /* Set all input fields to occupy full width */
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-size: 16px;
+}
+
+/* Style for the submit button */
+.btn-primary {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Style for the submit button on hover */
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Style for the select dropdown */
+select.form-control {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20480%20480%22%3E%3Cpath%20fill%3D%22%23333%22%20d%3D%22M160%20288c12.2%200%2024.4-4.7%2033.7-14.3%2017.7-18.6%2018.9-48.1%202.6-67.9-5.5-7.3-13.4-11.8-21.9-11.8-8.4%200-16.4%204.5-21.9%2011.8-16.3%2019.8-15.1%2049.3%202.6%2067.9%209.3%209.7%2021.5%2014.3%2033.7%2014.3z%22%3E%3C%2Fpath%3E%3Cpath%20fill%3D%22%23eee%22%20d%3D%22M227.7%20480c-8.4%200-16.4-4.5-21.9-11.8L93.9%20278.6c-12.1-13-12.1-34%200-47%2012.1-13%2031.7-13%2043.8%200l58.6%2063.1V11.7c0-8.1%206.6-14.7%2014.7-14.7s14.7%206.6%2014.7%2014.7v282.9l58.6-63.1c12.1-13%2031.7-13%2043.8%200s12.1%2034%200%2047L249.6%20468.2c-5.5%207.3-13.4%2011.8-21.9%2011.8z%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right center;
+  padding-right: 25px;
+}
+
+
+/* Add this CSS to your existing CSS file or create a new one */
+.form-container {
+  display: grid;
+  grid-template-columns: minmax(200px, 1fr); /* Equal width for columns with a minimum of 200px */
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-control {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%; /* Take up the full width of the parent container */
+}
+
+/* Optional: Add responsive styles */
+@media (max-width: 500px) {
+  .form-container {
+    max-width: 100%;
+  }
+}
